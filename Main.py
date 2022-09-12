@@ -1,12 +1,12 @@
 from typing import List
 
 def selectionSort(array, size) -> List[int]:
-  for i in range(size-1):
-     minIndex = i.
-     for j in range(i+1, size):
-       if array[j]<array[minIndex]:
-         minIndex = j.
-     array[i], array[minIndex] = array[minIndex], array[i]
+    for i in range(size):
+        min_index = i
+        for j in range(i + 1, size):
+            if array[j] < array[min_index]:
+                min_index = j
+        (array[i], array[min_index]) = (array[min_index], array[i])
 
 # Do not change the following code
 input_data = input()
